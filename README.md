@@ -20,7 +20,7 @@ sudo add-apt-repository ppa:videolan/stable-daily
 sudo apt-get update && sudo apt-get install vlc
 
 ```
-##Krita
+##Krita (LIME Experimental)
 
 ```
 sudo add-apt-repository ppa:dimula73/krita
