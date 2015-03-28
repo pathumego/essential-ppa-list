@@ -20,9 +20,9 @@ sudo add-apt-repository ppa:videolan/stable-daily
 sudo apt-get update && sudo apt-get install vlc
 
 ```
-##Amarok
+##Krita
 
 ```
-sudo add-apt-repository ppa:kubuntu-ppa/backports
-sudo apt-get update && sudo apt-get install amarok
+sudo add-apt-repository ppa:dimula73/krita
+sudo apt-get update && sudo sudo apt-get install krita-testing krita-testing-dbg 
 ```
