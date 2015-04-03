@@ -7,7 +7,6 @@ simplescreenrecorder
 # Font Manager
 fontmatrix
 
-
 # ********************** Graphics Suit - Latest Developemnt and Stable ************************** ****
  
 # GIMP For Raster Editing
@@ -45,6 +44,9 @@ darktable
 ppa: svg-cleaner-team / svgcleaner
 svgcleaner
  
+#OpenSHot for Video Editing
+ppa:openshot.developers/ppa
+openshot openshot-doc
 
 # ********************** Sound & Video ************************ ******
  
@@ -55,6 +57,7 @@ non-free-codecs audio video # non-free codecs
 #VLC Daily Stable
 ppa:videolan/stable-daily
 vlc
+
 
 # ********************** Internet ************************ ******
 
