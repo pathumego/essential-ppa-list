@@ -6,8 +6,8 @@ aptitude
 # ********************** Utilities ************************** ****
 
 # Sparckleshare for Collaboration and live backup 
-ppa: git-core/ppa
-ppa: rebuntu16/sparkleshare+unofficial
+ppa:git-core/ppa
+ppa:rebuntu16/sparkleshare+unofficial
 sparkleshare
 
 # Screen Recorder for Screen Casting
@@ -21,37 +21,37 @@ fontmatrix
  
 # GIMP For Raster Editing
 #gimp # Stable
-ppa: otto-kesselgulasch/gimp-edge # Latest developemnt build
+ppa:otto-kesselgulasch/gimp-edge # Latest developemnt build
 gimp-plugin-registry
 
 # Krita For Digital Painting
-#ppa: kubuntu-ppa/backports # Latest Stable Release
+#ppa:kubuntu-ppa/backports # Latest Stable Release
 #krita # Latest Stable Release
-ppa: dimula73/krita # Latest developemnt builds
+ppa:dimula73/krita # Latest developemnt builds
 krita-testing krita-testing-dbg 
 
 # Inkscape For Vector editing
-#ppa: inkscape.dev/stable # Latest Stable Release
+#ppa:inkscape.dev/stable # Latest Stable Release
 #inkscape # Latest Stable Release
-ppa: inkscape.dev/trunk
+ppa:inkscape.dev/trunk
 inkscape-trunk
 
 #Scribus for Layouts
-ppa: scribus/ppa
+ppa:scribus/ppa
 #scribus # Really old stable pakage
 scribus-trunk
 
 #FontForge For Font Editing and Creating
-ppa: fontforge/fontforge # Latest Stable Release
+ppa:fontforge/fontforge # Latest Stable Release
 fontforge
 
 #Darkable for RAW editing
-#ppa: pmjdebruijn/darktable-unstable #Experimental Unstable
+#ppa:pmjdebruijn/darktable-unstable #Experimental Unstable
 ppa:pmjdebruijn/darktable-release #Laest Releases
 darktable
 
 #SVG Cleaner for SVG optimisation
-ppa: svg-cleaner-team / svgcleaner
+ppa:svg-cleaner-team / svgcleaner
 svgcleaner
  
 #OpenSHot for Video Editing
