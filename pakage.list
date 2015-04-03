@@ -1,22 +1,11 @@
+# ********************** Utilities ************************** ****
 
-# ********************** Graphics ************************** ****
- 
- 
-Photo # Software 
-ACH: dlynch3 / ppa
-rapid-photo-downloader # Copying and renaming pictures from a digital camera
- 
-deb http: // jbrout.free.fr / download / debian binary /  > jbrout.list
-jBrout # tagging pictures
- 
-ACH: damien-moore / ppa
-phraymd # tagging pictures
- 
-hugin # assembly panorama photos
- 
+# Screen Recorder for Screen Casting
+ppa:maarten-baert/simplescreenrecorder
+simplescreenrecorder
 
- 
-# ********************** Latest Developemnt ************************** ****
+
+# ********************** Graphics Suit - Latest Developemnt and Stable ************************** ****
  
 # GIMP For Raster Editing
 #gimp # Stable
@@ -35,9 +24,19 @@ krita-testing krita-testing-dbg
 ppa: inkscape.dev/trunk
 inkscape-trunk
 
-# FontForge For Font Editing and Creating
+#Scribus for Layouts
+ppa: scribus/ppa
+#scribus # Really old stable pakage
+scribus-trunk
+
+#FontForge For Font Editing and Creating
 ppa: fontforge/fontforge # Latest Stable Release
 fontforge
+
+#Darkable for RAW editing
+#ppa: pmjdebruijn/darktable-unstable #Experimental Unstable
+ppa:pmjdebruijn/darktable-release #Laest Releases
+darktable
 
 #SVG Cleaner for SVG optimisation
 ppa: svg-cleaner-team / svgcleaner
@@ -50,12 +49,9 @@ deb http: // packages.medibuntu.org / lucid free non-free > medibuntu.list
 key: 0C5A2783
 non-free-codecs audio video # non-free codecs
 
- 
-ppa: ubuntu-handbrake / ppa
-handbrake-gtk # ripping DVDs
- 
-ACH: c-korn / ppa
-vlc # multimedia (audio / video)
+#VLC Daily Stable
+ppa:videolan/stable-daily
+vlc
 
 # ********************** Internet ************************ ******
 
