@@ -1,4 +1,11 @@
+# ******* Pathum's Pakage List for Libre Graphics on Ubuntu ******
+
 # ********************** Utilities ************************** ****
+
+# Sparckleshare for Collaboration and live backup 
+ppa: git-core/ppa
+ppa: rebuntu16/sparkleshare+unofficial
+sparkleshare
 
 # Screen Recorder for Screen Casting
 ppa:maarten-baert/simplescreenrecorder
@@ -48,20 +55,3 @@ svgcleaner
 ppa:openshot.developers/ppa
 openshot openshot-doc
 
-# ********************** Sound & Video ************************ ******
- 
-deb http: // packages.medibuntu.org / lucid free non-free > medibuntu.list
-key: 0C5A2783
-non-free-codecs audio video # non-free codecs
-
-#VLC Daily Stable
-ppa:videolan/stable-daily
-vlc
-
-
-# ********************** Internet ************************ ******
-
-#ppa: chromium-daily / ppa 
-#ppa: chromium-daily / beta 
-ppa: chromium-daily / dev
-chromium-browser web browser #
