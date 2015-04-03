@@ -1,5 +1,8 @@
 # ******* Pathum's Pakage List for Libre Graphics on Ubuntu ******
 
+#******************Aptitude for Package Mangement**THIS IS REQUIERD FOR SCRIPT TO RUN***
+aptitude
+
 # ********************** Utilities ************************** ****
 
 # Sparckleshare for Collaboration and live backup 
