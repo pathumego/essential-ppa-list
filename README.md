@@ -1,9 +1,15 @@
 essential-ppa-list
 ==================
 
-This is a collection of ppa's that I have collected since I started using Ubuntu 14.04 on my Mac. I like to use the latest bleeding edge builds. So use at your own risk.
+This is a collection of ppa's that I have collected since I started using Ubuntu 14.04 on my Mac. I mostly do design work and the software selection on this list is based on personal preference only.
 
-Last updated {{ site.time | date_to_long_string }}.
+I like to use the latest bleeding edge builds. So use at your own risk.
+
+# Install with Clean Start
+
+I made a pakagelist to be installed using [Cleanstart](https://silverwav.wordpress.com/2010/03/18/a-cleanstart-for-your-new-ubuntu-install-packages-from-a-list/) by silverwav and [Ubuntu post installation script](http://voidandany.free.fr/index.php/installer-de-facon-automatique-une-liste-de-package-et-les-depots-associes/) by VoidAndAny 
+
+TODO : Write a How To
 
 
 #Utilities
