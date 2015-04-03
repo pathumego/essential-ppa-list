@@ -1,36 +1,6 @@
-# ********************** ************************** Accessories ****
- 
-parcellite # management clipboard
- 
-ACH: shutter / ppa
-shutter evolved # screen capture software
- 
-# ********************** Other ************************** ****
- 
-deb http: // www-personal.umich.edu / ~ tjwatt / suldr / extra debian > samsungCLX3175_driver.list
-http: // www-personal.umich.edu / ~ tjwatt / suldr / suldr.gpg
-samsungmfp-configurator-data-samsungmfp configurator samsungmfp-qt4-driver samsungmfp-data samsungmfp scanner driver # printer Samsung CLX 3175
- 
-# ********************** Office ************************** ****
- 
-ACH: claydoh / ppa
-kmymoney2 management of personal finances #
- 
-gcstar # collections manager (books)
- 
-# ********************** Education ************************** ****
- 
-tuxpaint gcompris gcompris # + matrix drawing program for children
- 
-childsplay childsplay-alphabet-sounds-fr # Childsplay + French language
- 
-pysycache pysycache-buttons-beerabbit pysycache-buttons-toad pysycache-buttons-wolf pysycache-click-sea-pysycache dblclick pysycache-butterfly-move-move-animals pysycache Food pysycache-move-plants pysycache-move-sky-pysycache MOVE- pysycache-puzzle-cartoons pysycache-puzzle-sports pictures # Psycache + extensions
- 
+
 # ********************** Graphics ************************** ****
  
-gimp gimp-help-fr # raster image editing
- 
-Inkscape vector drawing software #
  
 Photo # Software 
 ACH: dlynch3 / ppa
@@ -44,62 +14,52 @@ phraymd # tagging pictures
  
 hugin # assembly panorama photos
  
-f-spot  elimination # f-spot (mono + heavy)
+
  
-# ********************** World Wide Web ************************** ****
+# ********************** Latest Developemnt ************************** ****
  
-ACH: deluge-team / ppa
-deluge-common deluge-gtk GTK # GUI client torrent deluge
+# GIMP For Raster Editing
+#gimp # Stable
+ppa: otto-kesselgulasch/gimp-edge # Latest developemnt build
+gimp-plugin-registry
+
+# Krita For Digital Painting
+#ppa: kubuntu-ppa/backports # Latest Stable Release
+#krita # Latest Stable Release
+ppa: dimula73/krita # Latest developemnt builds
+krita-testing krita-testing-dbg 
+
+# Inkscape For Vector editing
+#ppa: inkscape.dev/stable # Latest Stable Release
+#inkscape # Latest Stable Release
+ppa: inkscape.dev/trunk
+inkscape-trunk
+
+# FontForge For Font Editing and Creating
+ppa: fontforge/fontforge # Latest Stable Release
+fontforge
+
+#SVG Cleaner for SVG optimisation
+ppa: svg-cleaner-team / svgcleaner
+svgcleaner
  
--transmission-common transmission-gtk # customer feedthrough suppression torrent installed by default in Gnome
- 
-# News: DAILY> BETA> DEV> STABLE (not available on Linux) 
-#ppa: chromium-daily / ppa 
-#ppa: chromium-daily / beta 
-ppa: chromium-daily / dev
-chromium-browser web browser #
- 
-Pidgin instant messaging #
- 
--empathy empathy-common nautilus-sendto-empathy empathy # delete loiciel of instant messaging installed by default in Gnome and its integration in Nautilus
- 
-thunderbird thunderbird-locale-fr thunderbird-gnome-support email client #
- 
-deb http: // linux.dropbox.com / ubuntu lucid main > dropbox.list
-key: FC918B335044912E
-nautilus-dropbox # online storage and file synchronization
- 
-# ********************** Games ************************** ****
- 
-frozen-bubble # games where you have to blow balls by combining three color
- 
-# ********************** ************************* Shopsystems Tools *****
- 
-htop # monitoring memory / cpu ...
- 
-language-pack-fr language-pack-gnome-fr # language pack for Ubuntu completely franciser
- 
+
 # ********************** Sound & Video ************************ ******
  
 deb http: // packages.medibuntu.org / lucid free non-free > medibuntu.list
 key: 0C5A2783
 non-free-codecs audio video # non-free codecs
- 
-asunder # ripping CDs
+
  
 ppa: ubuntu-handbrake / ppa
 handbrake-gtk # ripping DVDs
  
 ACH: c-korn / ppa
 vlc # multimedia (audio / video)
- 
-# ********************** Tools (not desktop) ********************** ********
- 
-autofs # Automatic mounting remote file system
- 
-nfs-common NFS client #
- 
-deb http: // archive.canonical.com / ubuntu lucid partner > partner.list
-sun-java6-jre # Java framework
- 
-vim  # improved VI editor
+
+# ********************** Internet ************************ ******
+
+#ppa: chromium-daily / ppa 
+#ppa: chromium-daily / beta 
+ppa: chromium-daily / dev
+chromium-browser web browser #
