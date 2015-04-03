@@ -9,7 +9,14 @@ I like to use the latest bleeding edge builds. So use at your own risk.
 
 I made a pakagelist to be installed using [Cleanstart](https://silverwav.wordpress.com/2010/03/18/a-cleanstart-for-your-new-ubuntu-install-packages-from-a-list/) by silverwav and [Ubuntu post installation script](http://voidandany.free.fr/index.php/installer-de-facon-automatique-une-liste-de-package-et-les-depots-associes/) by VoidAndAny 
 
-TODO : Write a How To
+Install Aptitude First, On Terminal do the following.
+
+`sudo apt-get install aptitude`
+
+Then extract `cleanstart-packages.list.sh` and `packages.list` into the same folder. Acess the folder on Terminal. Then do the following.
+
+`sudo sh cleanstart-packages.list.sh`
+
 
 
 #Utilities
