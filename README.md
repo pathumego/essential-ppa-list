@@ -41,6 +41,13 @@ sudo add-apt-repository ppa:videolan/stable-daily
 sudo apt-get update && sudo apt-get install vlc
 
 ```
+##Ambient Noise Player
+
+```
+sudo add-apt-repository ppa:costales/anoise
+sudo apt-get update && sudo apt-get install anoise
+```
+
 
 #Grphics Suit 
 
