@@ -71,7 +71,7 @@ sudo apt-get update && sudo apt-get install svgcleaner
 
 #Utilities
 
-##Sparcklshare
+##Sparklshare
 
 ```
 sudo add-apt-repository ppa:git-core/ppa
