@@ -71,6 +71,14 @@ sudo apt-get update && sudo apt-get install svgcleaner
 
 #Utilities
 
+##Sparcklshare
+
+```
+sudo add-apt-repository ppa:git-core/ppa
+sudo add-apt-repository ppa:rebuntu16/sparkleshare+unofficial
+sudo apt-get update && sudo apt-get install sparkleshare
+```
+
 ##Simple Screen Recorder
 ```
 sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
