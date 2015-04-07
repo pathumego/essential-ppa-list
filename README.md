@@ -5,6 +5,10 @@ Here is a list of commands, likns and PPA's to set up a Graphic Design suit on U
 
 This is a collection of ppa's that we have collected since we started using Ubuntu 14.04 at our studio. We like to use the latest bleeding edge builds with all new features. But they have bugs and might crash, we have a solid backup system with Sparcklshare. If you are doing projects that is time sensitive and if your bakcup system sucks, scroll down to see the command to install stable older packages from Ubuntu Software Centre.
 
+There might be compatibility issues on some of the latest versions like Scribus. So google around and/or visit the PPA page on Launchpad and findout weather it works for you.
+
+CHECK WHEN THIS DOC WAS UPDATED BEFORE YOU DO ANYTHING. WE MIGHT NOT KEEP UPDATING THIS DOC.
+
 There are many different Libre softwares that do the same tasks.. this is based on just our preference.
 
 This list will be eventually merged with https://github.com/mooniak/libre-design-tools as a webpage
@@ -37,10 +41,18 @@ sudo apt-get update && sudo apt-get install inkscape-trunk
 ###Edge
 ```
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp-edge
-sudo apt-get update && sudo apt-get install gimp
+sudo apt-get update && sudo apt-get install gimp-gmic gmic
+sudo apt-get install gimp-plugin-registry
+sudo apt-get install gimp-resynthesizer
 ```
 ###Latest Stable
 
+```
+sudo add-apt-repository ppa:otto-kesselgulasch/gimp
+sudo apt-get update && sudo apt-get install gimp-gmic gmic
+sudo apt-get install gimp-plugin-registry
+sudo apt-get install gimp-resynthesizer
+```
 ##Scribus 
 
 ###Edge
@@ -58,7 +70,15 @@ sudo apt-get update && sudo apt-get install scribus
 sudo add-apt-repository ppa:dimula73/krita
 sudo apt-get update && sudo sudo apt-get install krita-testing krita-testing-dbg 
 ```
+
 ###Latest Stable
+
+```
+sudo add-apt-repository ppa:kubuntu-ppa/backports 
+sudo apt-get update 
+sudo apt-get install krita
+```
+
 
 
 ##SVG Cleaner
