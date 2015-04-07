@@ -32,25 +32,34 @@ sudo add-apt-repository ppa:inkscape.dev/trunk
 sudo apt-get update && sudo apt-get install inkscape-trunk
 ```
 
-##GIMP Edge
+##GIMP 
+
+###Edge
 ```
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp-edge
 sudo apt-get update && sudo apt-get install gimp
 ```
+###Latest Stable
 
-##Scribus Edge
+##Scribus 
+
+###Edge
 
 ```
 sudo add-apt-repository ppa:scribus/ppa
 sudo apt-get update && sudo apt-get install scribus
 ```
+###Latest Stable
 
-##Krita (LIME Experimental)
+##Krita 
 
+###Edge (LIME Experimental)
 ```
 sudo add-apt-repository ppa:dimula73/krita
 sudo apt-get update && sudo sudo apt-get install krita-testing krita-testing-dbg 
 ```
+###Latest Stable
+
 
 ##SVG Cleaner
 
@@ -94,3 +103,9 @@ Install Aptitude First, On Terminal do the following.
 Then extract `cleanstart-packages.list.sh` and `packages.list` into the same folder. Acess the folder on Terminal. Then do the following.
 
 `sudo sh cleanstart-packages.list.sh`
+
+
+# Install from Ubuntu Repositories
+
+```
+sudo apt-get install inkscape gimp scribus 
