@@ -68,7 +68,7 @@ sudo add-apt-repository ppa:otto-kesselgulasch/gimp-edge
 sudo apt-get update && sudo apt-get install gimp
 ```
 
-##GIMP Edge
+##Scribus Edge
 
 ```
 sudo add-apt-repository ppa:scribus/ppa
