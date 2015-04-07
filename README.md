@@ -1,52 +1,14 @@
-essential-ppa-list
+Ubuntu Grphics Suit
 ==================
 
-This is a collection of ppa's that I have collected since I started using Ubuntu 14.04 on my Mac. I mostly do design work and the software selection on this list is based on personal preference only.
+Here is a list of commands, likns and PPA's to set up a Graphic Design suit on Ubuntu or its flavours.
 
-I like to use the latest bleeding edge builds. So use at your own risk.
+This is a collection of ppa's that we have collected since we started using Ubuntu 14.04 at our studio. We like to use the latest bleeding edge builds with all new features. But they have bugs and might crash, we have a solid backup system with Sparcklshare. If you are doing projects that is time sensitive and if your bakcup system sucks, scroll down to see the command to install stable older packages from Ubuntu Software Centre.
 
-# Install with Clean Start
+There are many different Libre softwares that do the same tasks.. this is based on just our preference.
 
-I made a pakagelist to be installed using [Cleanstart](https://silverwav.wordpress.com/2010/03/18/a-cleanstart-for-your-new-ubuntu-install-packages-from-a-list/) by silverwav and [Ubuntu post installation script](http://voidandany.free.fr/index.php/installer-de-facon-automatique-une-liste-de-package-et-les-depots-associes/) by VoidAndAny 
+This list will be eventually merged with https://github.com/mooniak/libre-design-tools as a webpage
 
-Install Aptitude First, On Terminal do the following.
-
-`sudo apt-get install aptitude`
-
-Then extract `cleanstart-packages.list.sh` and `packages.list` into the same folder. Acess the folder on Terminal. Then do the following.
-
-`sudo sh cleanstart-packages.list.sh`
-
-
-
-#Utilities
-
-##Simple Screen Recorder
-```
-sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
-sudo apt-get update && sudo apt-get install simplescreenrecorder
-```
-
-##Tor
-```
-sudo add-apt-repository ppa:webupd8team/tor-browser
-sudo apt-get update && sudo apt-get install tor-browser
-```
-
-
-##VLC Stable Daily
-
-```
-sudo add-apt-repository ppa:videolan/stable-daily 
-sudo apt-get update && sudo apt-get install vlc
-
-```
-##Ambient Noise Player
-
-```
-sudo add-apt-repository ppa:costales/anoise
-sudo apt-get update && sudo apt-get install anoise
-```
 
 
 #Grphics Suit 
@@ -57,11 +19,19 @@ sudo add-apt-repository ppa:fontforge/fontforge
 sudo apt-get update && sudo apt-get install fontforge
 
 ```
-##Inkscape Trunk Builds
+##Inkscape 
+
+###Trunk Builds
 ```
 sudo add-apt-repository ppa:inkscape.dev/trunk
 sudo apt-get update && sudo apt-get install inkscape-trunk
 ```
+###Latest Stable
+```
+sudo add-apt-repository ppa:inkscape.dev/trunk
+sudo apt-get update && sudo apt-get install inkscape-trunk
+```
+
 ##GIMP Edge
 ```
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp-edge
@@ -88,3 +58,39 @@ sudo apt-get update && sudo sudo apt-get install krita-testing krita-testing-dbg
 sudo add-apt-repository ppa: svg-cleaner-team / svgcleaner
 sudo apt-get update && sudo apt-get install svgcleaner
 ```
+
+
+#Utilities
+
+##Simple Screen Recorder
+```
+sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
+sudo apt-get update && sudo apt-get install simplescreenrecorder
+```
+
+##Ambient Noise Player
+
+```
+sudo add-apt-repository ppa:costales/anoise
+sudo apt-get update && sudo apt-get install anoise
+```
+
+##Guake Terminal
+
+```
+sudo apt-get install guake
+```
+
+
+
+# Install with Clean Start
+
+I made a pakagelist to be installed using [Cleanstart](https://silverwav.wordpress.com/2010/03/18/a-cleanstart-for-your-new-ubuntu-install-packages-from-a-list/) by silverwav and [Ubuntu post installation script](http://voidandany.free.fr/index.php/installer-de-facon-automatique-une-liste-de-package-et-les-depots-associes/) by VoidAndAny 
+
+Install Aptitude First, On Terminal do the following.
+
+`sudo apt-get install aptitude`
+
+Then extract `cleanstart-packages.list.sh` and `packages.list` into the same folder. Acess the folder on Terminal. Then do the following.
+
+`sudo sh cleanstart-packages.list.sh`
