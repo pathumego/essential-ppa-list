@@ -1,4 +1,4 @@
-Ubuntu Grphics Suit
+Ubuntu Graphics Suite
 ==================
 
 Here is a list of commands, likns and PPA's to set up a Graphic Design suit on Ubuntu or its flavours.
