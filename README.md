@@ -110,6 +110,10 @@ sudo apt-get update && sudo apt-get install simplescreenrecorder
 ```
 sudo add-apt-repository ppa:costales/anoise
 sudo apt-get update && sudo apt-get install anoise
+sudo apt-get install anoise-community-extension1
+sudo apt-get install anoise-community-extension2
+sudo apt-get install anoise-community-extension3
+
 ```
 
 ##Guake Terminal
