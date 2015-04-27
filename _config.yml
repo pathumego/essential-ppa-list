@@ -1,0 +1,33 @@
+title_tag_text: mooniak
+h1_tag_text: mooniak
+safe: false
+lsi: false
+pygments: true
+
+
+# About/contact
+author:
+  name:              Pathum Egodawatta
+  url:               https://twitter.com/pathumego
+  email:             pathum@mooniak.com
+
+# Custom vars
+version:             0.0.1
+
+paginate: 10
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
+  - Procfile
+  - Gruntfile.js
+  - package.json
+  - CNAME
+  - node_modules
+
