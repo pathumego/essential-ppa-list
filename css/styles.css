@@ -190,13 +190,12 @@ pre > code {
     padding: 10px;
     text-decoration: none;
     color: #000000;
-    border: 1px dotted #000;
 }
 .tile:hover {
     padding: 10px;
     text-decoration: none;
     color: #000000;
-    border: 1px dotted #000;
+    
        background: #eee;
 
 }
@@ -236,5 +235,10 @@ a.tile_link:focus {
 .green {
 }
 
-.code_display{
+    .code_display{
     background: #000000; color:#fff; font-family:monospace; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;}
+
+.fixed{
+position: fixed;
+    
+}
