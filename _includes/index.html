@@ -1,26 +1,29 @@
 <div class="grid grid-pad">
 
 
-    {% for tag in site.tags %} {% assign t = tag | first %} {% assign posts = tag | last %} {% for post in posts %} {% if post.tags contains t %}
+    {% for tag in site.tags %} 
+    {% assign t = tag | first %} 
+    {% assign posts = tag | last %} 
+    {% for post in posts %} 
+    {% if post.tags contains t %}
     <div class="post">
         <div class="col-1-3">
            
                 <div class="tile {{ post.background }} {{ post.catagory }}">
-                    <div class="category">{{ post.category }}{{ post.tags }}&nbsp; | Added on {{ post.date | date: '%B %d, %Y' }}
-</div>
 
                     <input type="checkbox" id="{{ post.name }}" class="big_chk" onchange="refreshFeatures()">&nbsp; {{ post.title }}
+                    <div class="category">{{ post.category }}{{ post.tags }}&nbsp; | Added on {{ post.date | date: '%B %d, %Y' }}</div>
 
-Added on {{ post.date | date: '%B %d, %Y' }}
+
 
 
                     </h2> {{ post.content }}
 
                 </div>
-        </div>
+        
     </div>
 
-    {% endif %} {% endfor %} {% endfor %}
+    {% endif %}</div> {% endfor %} {% endfor %}
 
 </div>
 
