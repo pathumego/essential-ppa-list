@@ -402,7 +402,7 @@ input[type="checkbox"] + label {
 	border-radius: 100px;
 }
 
-#checkbox-8-1 + label, #checkbox-8-2 + label {
+#checkbox-8-1 + label, .big_chk + label {
 	overflow: hidden;
 }
 
@@ -413,7 +413,7 @@ input[type="checkbox"] + label {
 	background: #63C99C;
 }
 
-#checkbox-8-2 + label:after, #checkbox-8-2 + label:before, #checkbox label,
+.big_chk + label:after, .big_chk + label:before, #checkbox label,
 #checkbox-8-4 + label:after, #checkbox-8-4 + label:before, #checkbox label {
 	-webkit-transition: all 0.1s ease-in;
 	transition: all 0.1s ease-in;

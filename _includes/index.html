@@ -1,29 +1,27 @@
 <div class="grid grid-pad">
 
 
-    {% for tag in site.tags %} 
-    {% assign t = tag | first %} 
-    {% assign posts = tag | last %} 
-    {% for post in posts %} 
-    {% if post.tags contains t %}
+    {% for tag in site.tags %} {% assign t = tag | first %} {% assign posts = tag | last %} {% for post in posts %} {% if post.tags contains t %}
     <div class="post">
         <div class="col-1-3">
-           
-                <div class="tile {{ post.background }} {{ post.catagory }}">
 
-                    <input type="checkbox" id="{{ post.name }}" class="big_chk" onchange="refreshFeatures()">&nbsp; {{ post.title }}
-                    <div class="category">{{ post.category }}{{ post.tags }}&nbsp; | Added on {{ post.date | date: '%B %d, %Y' }}</div>
+            <div class="tile {{ post.background }} {{ post.catagory }}">
+
+                <input type="checkbox" id="{{ post.name }}" class="regular-radio" onchange="refreshFeatures()">
+                <label for="{{ post.name }}"></label>
+                <h2>{{ post.title }}</h2>
+                <div class="category">{{ post.category }}{{ post.tags }}&nbsp; | Added on {{ post.date | date: '%B %d, %Y' }}</div>
 
 
 
 
-                    </h2> {{ post.content }}
+                </h2> {{ post.content }}
 
-                </div>
-        
-    </div>
+            </div>
 
-    {% endif %}</div> {% endfor %} {% endfor %}
+        </div>
+
+        {% endif %}</div> {% endfor %} {% endfor %}
 
 </div>
 
@@ -31,12 +29,12 @@
 
 <div class="grid grid-pad">
 
-Add PPAs
-        <div class="code_display">
-            <p id="csscode"></p>
-        </div>
-Install Packages
-        <div class="code_display">
-            <p id="csscode2"></p>
-        </div>
+    Add PPAs
+    <div class="code_display">
+        <p id="csscode"></p>
     </div>
+    Install Packages
+    <div class="code_display">
+        <p id="csscode2"></p>
+    </div>
+</div>
