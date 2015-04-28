@@ -1,6 +1,23 @@
 <div class="grid grid-pad">
 
 
+        <div class="col-1-1">
+            <h1>Libre Graphics Tools Installer Scripts for Ubuntu</h1>
+            <p>Check the boxes of Softwares you need to add to your Ubuntu or Ubuntu varient system. Then Copy and paste the script in the black box into Terminal. </p>
+            This is a collection of ppa's that we have collected since we started using Ubuntu 14.04 at our studio. We like to use the latest bleeding edge builds with all new features. But they have bugs and might crash, we have a solid backup system with Sparcklshare. If you are doing projects that is time sensitive and if your bakcup system sucks, scroll down to see the command to install stable older packages from Ubuntu Software Centre.
+
+There might be compatibility issues on some of the latest versions like Scribus. So google around and/or visit the PPA page on Launchpad and findout weather it works for you.
+
+CHECK WHEN THIS DOC WAS UPDATED BEFORE YOU DO ANYTHING. WE MIGHT NOT KEEP UPDATING THIS DOC.
+
+There are many different Libre softwares that do the same tasks.. this is based on just our preference.
+    </div>
+</div>
+
+
+
+<div class="grid grid-pad">
+
     {% for tag in site.tags %} {% assign t = tag | first %} {% assign posts = tag | last %} {% for post in posts %} {% if post.tags contains t %}
     <div class="post">
         <div class="col-1-3">
