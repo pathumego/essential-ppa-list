@@ -10,7 +10,7 @@ function refreshFeatures() {
 
 {% for post in site.posts %}
 
-if (document.getElementById("{{ post.name }}")) PPA += !document.getElementById("{{ post.name }}").checked ? '' : ' sudo add-apt repository {{ post.ppa }};<br />  ' ;
+if (document.getElementById("{{ post.name }}")) PPA += !document.getElementById("{{ post.name }}").checked ? '' : ' sudo add-apt-repository {{ post.ppa }};<br />  ' ;
 
 
  {% if forloop.last %}{% else %}{% endif %}
