@@ -51,7 +51,7 @@ if (document.getElementById("{{ post.name }}")) PPA += !document.getElementById(
 
 {% for post in site.posts %}
 
-if (document.getElementById("{{ post.name }}")) INSTALL += !document.getElementById("{{ post.name }}").checked ? '' : ' sudo add-apt install {{ post.install }}; <br />  ' ;
+if (document.getElementById("{{ post.name }}")) INSTALL += !document.getElementById("{{ post.name }}").checked ? '' : ' sudo apt-get install {{ post.install }}; <br />  ' ;
 
 
  {% if forloop.last %}{% else %}{% endif %}
