@@ -1,7 +1,10 @@
 #! /bin/bash
  
 ################################################################################
-# Ubuntu (> 9.10) post installation script
+# Cleanstart Graphic Tools 2015
+# Changed to using apt instead of aptitude by @pathumego for Ubuntu-Grphics-Suit
+#
+# based on Ubuntu (> 9.10) post installation script
 # by VoidAndAny
 #
 # based on cleanstart-packages.list.sh by silverwav - OpenPGP key:03187548 15 Apr 2009
@@ -31,7 +34,7 @@
 ################################################################################
 clear
 echo "--------------------------------------------------------------------------------"
-echo "                 (cleanstart) Script for installing packages (client)                 "
+echo "   (cleanstart) Script for installing packages (client) to Install Grphics Tools                "
 echo "--------------------------------------------------------------------------------"
  
 # ensure script is run as root/sudo
@@ -111,7 +114,7 @@ apt-get update
 echo ""
 echo "Installing packages:" ${PACKAGE_NAME_LIST}
 echo "--------------------------------------------------------------------------------"
-# ajouter le -y
+# Add le -y
 apt-get install ${PACKAGE_NAME_LIST}
  
 echo ""
@@ -121,5 +124,5 @@ echo "--------------------------------------------------------------------------
 apt-get remove ${REMOVE_PACKAGE_LIST}
  
 echo ""
-echo "Done"
+echo "DONE: Enjoy your Libre Grphics Suite"
 echo "--------------------------------------------------------------------------------"
