@@ -2,8 +2,6 @@
 
 <head>
     <meta charset="UTF-8">
-
-
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Karla:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/syntax.css">
@@ -23,7 +21,7 @@
             // by assigning a function to "onclick"
             a.onclick = function () {
 
-                window.open('/cleanstart-install.sh');
+                window.open('{{ baseurl }}cleanstart-install.sh');
 
 
                 function downloadInnerHtml(filename, elId, mimeType) {

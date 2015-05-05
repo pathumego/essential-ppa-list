@@ -3,7 +3,8 @@ h1_tag_text: mooniak
 safe: false
 lsi: false
 pygments: true
-
+ 
+baseurl:               /ubuntu-graphics-suite/
 
 # About/contact
 author:
