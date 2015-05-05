@@ -29,6 +29,7 @@ catagory: design
 - Creat a Pull request.
 
 
+Or if you are too lazy file an issue, someone will add it eventually :)
 
 ## Disclaimer
 
