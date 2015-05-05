@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="UTF-8">
 
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Karla:400,700' rel='stylesheet' type='text/css'>
@@ -8,29 +9,51 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/simplegrid.css">
     <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+
+        <script type="text/javascript">
+
+
+            // Wait for the page to load first
+            window.onload = function() {
+
+              //Get a reference to the link on the page
+              // with an id of "exportxt"
+              var a = document.getElementById("exportxt");
+
+              //Set code to run when the link is clicked
+              // by assigning a function to "onclick"
+              a.onclick = function() {
+
+                // Your code here...
+
+
+    function downloadInnerHtml(filename, elId, mimeType) {
+        var elHtml = document.getElementById(elId).innerHTML;
+        var link = document.createElement('a');
+        mimeType = mimeType || 'text/plain';
+        link.setAttribute('download', filename);
+        link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
+        link.click(); 
+    }
+    var fileName =  'graphics-install.sh'; // You can use the .txt extension if you want
+    downloadInnerHtml(fileName, 'editor','text/plain');
+                //If you don't want the link to actually 
+                // redirect the browser to another page, then
+                // return false at the end of this block.
+                // Note that this also prevents event bubbling,
+                // which is probably what we want here, but won't 
+                // always be the case.
+                return false;
+              }
+            }
+
+    </script>
+    
 
     
     <script>
-       function downloadInnerHtml(filename, elId, mimeType) {
-    var elHtml = document.getElementById(elId).innerHTML;
-    var link = document.createElement('a');
-    mimeType = mimeType || 'text/plain';
-
-    link.setAttribute('download', filename);
-    link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
-    link.click(); 
-}
-
-var fileName =  'tags.html'; // You can use the .txt extension if you want
-
-
-$('#downloadLink').click(function(){
-    downloadInnerHtml(fileName, 'script-download','text/html');
-});
-
-
-
+        localStorage.clear();
     </script>
     <script>
         $(document).ready(function () {
