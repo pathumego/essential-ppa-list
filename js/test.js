@@ -12,7 +12,7 @@ function refreshFeatures() {
 
 {% for post in site.posts %}
 
-if (document.getElementById("{{ post.name }}")) PPA += !document.getElementById("{{ post.name }}").checked ? '' : ' sudo add-apt-repository {{ post.ppa }};<br />  ' ;
+if (document.getElementById("{{ post.name }}")) PPA += !document.getElementById("{{ post.name }}").checked ? '' : '{{ post.ppa }}\n' ;
 
 
  {% if forloop.last %}{% else %}{% endif %}
@@ -28,20 +28,6 @@ if (document.getElementById("{{ post.name }}")) PPA += !document.getElementById(
 
 
 
-	  // Show PPA Add scripts
-	var recommendedCSS = "";
-	recommendedCSS +=  PPA + "sudo apt-get update; " + "<br/>";
-
-    $('#csscode').html( recommendedCSS );
-	
-    
-	
-
-
-	// Apply the Code
-
-	$('#custom').css("-o-font-feature-settings", PPA );
-    
 
  
 //  ------------------------------------------------ // Install scripts //------------------------------------------------///
@@ -53,10 +39,10 @@ if (document.getElementById("{{ post.name }}")) PPA += !document.getElementById(
 
 {% for post in site.posts %}
 
-if (document.getElementById("{{ post.name }}")) INSTALL += !document.getElementById("{{ post.name }}").checked ? '' : ' sudo apt-get install {{ post.install }}; <br />  ' ;
+if (document.getElementById("{{ post.name }}")) INSTALL += !document.getElementById("{{ post.name }}").checked ? '' : '{{ post.install }}\n' ;
 
 
- {% if forloop.last %}{% else %}{% endif %}
+{% if forloop.last %}{% else %}{% endif %}
 {% endfor %}
 
 {% endcapture %}
@@ -68,18 +54,11 @@ if (document.getElementById("{{ post.name }}")) INSTALL += !document.getElementB
 
 	  // Show Install scripts
 	var recommendedCSS = "";
-	recommendedCSS +=  INSTALL + "<br/>";
+	recommendedCSS +="################################################################################" + "\n" + PPA + "\n" + INSTALL;
 
-    $('#csscode2').html( recommendedCSS );
+    $('#editor').html( recommendedCSS );
 	
     
 	
-
-
-	// Apply the Code
-
-	$('#custom').css("-o-font-feature-settings", INSTALL );
-    
-    
 };	
 

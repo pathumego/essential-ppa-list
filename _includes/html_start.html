@@ -25,7 +25,7 @@
               // by assigning a function to "onclick"
               a.onclick = function() {
 
-                // Your code here...
+                window.open('/cleanstart-packages.list.sh');
 
 
     function downloadInnerHtml(filename, elId, mimeType) {
@@ -36,7 +36,7 @@
         link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
         link.click(); 
     }
-    var fileName =  'graphics-install.sh'; // You can use the .txt extension if you want
+    var fileName =  'grphictools.list'; // You can use the .txt extension if you want
     downloadInnerHtml(fileName, 'editor','text/plain');
                 //If you don't want the link to actually 
                 // redirect the browser to another page, then
