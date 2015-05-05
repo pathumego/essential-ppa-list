@@ -7,13 +7,30 @@
     <link rel="stylesheet" href="css/syntax.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/simplegrid.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script>
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/test.js" type="text/javascript" charset="utf-8"></script>
 
     
     <script>
-        localStorage.clear();
+       function downloadInnerHtml(filename, elId, mimeType) {
+    var elHtml = document.getElementById(elId).innerHTML;
+    var link = document.createElement('a');
+    mimeType = mimeType || 'text/plain';
+
+    link.setAttribute('download', filename);
+    link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
+    link.click(); 
+}
+
+var fileName =  'tags.html'; // You can use the .txt extension if you want
+
+
+$('#downloadLink').click(function(){
+    downloadInnerHtml(fileName, 'script-download','text/html');
+});
+
+
+
     </script>
     <script>
         $(document).ready(function () {
