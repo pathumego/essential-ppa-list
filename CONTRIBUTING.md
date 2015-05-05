@@ -2,10 +2,11 @@
 
 PPAs are added as jekyll posts into this repo.
 
-Fork the repo
-Create a new post in _posts
-Name it YYYY-MM-DD-application-name.md structure.
-Copy the structure from this..
+- Fork the repo
+- Create a new post in _posts
+- Name it YYYY-MM-DD-application-name.md structure.
+- Copy the structure from this..
+```
 ---
 layout: post
 title: <NAME OF THE SOFTWARE>
@@ -17,4 +18,5 @@ tags:
     - <ADD A TAG>
 catagory: design
 ---
-Creat a Pull request.
+```
+- Creat a Pull request.
