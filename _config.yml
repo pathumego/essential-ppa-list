@@ -4,14 +4,18 @@ safe: false
 lsi: false
 pygments: true
  
-- baseurl: http://mooniak.com/ubuntu-graphics-suite
-
-
-exclude:
-  - README.md
+- baseurl: http://mooniak.com/ubuntu-graphics-suite/
 
 # About/contact
 author:
   name:              Pathum Egodawatta
   url:               https://twitter.com/pathumego
   email:             pathum@mooniak.com
+
+# Custom vars
+version:             0.0.1
+
+paginate: 10
+
+exclude:
+  - README.md
