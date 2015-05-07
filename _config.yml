@@ -4,7 +4,7 @@ safe: false
 lsi: false
 pygments: true
  
-- baseurl: http://mooniak.com/ubuntu-graphics-suite/
+- baseurl: http://mooniak.com/ubuntu-graphics
 
 # About/contact
 author:
