@@ -6,6 +6,7 @@ pygments: true
  
 baseurl:               /ubuntu-graphics-suite
 
+
 # About/contact
 author:
   name:              Pathum Egodawatta
