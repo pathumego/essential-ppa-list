@@ -1,7 +1,10 @@
 #! /bin/bash
  
 ################################################################################
-# Ubuntu (> 9.10) post installation script
+# Cleanstart Graphic Tools 2015
+# Changed to using apt instead of aptitude by @pathumego for Ubuntu-Grphics-Suit
+#
+# based on Ubuntu (> 9.10) post installation script
 # by VoidAndAny
 #
 # based on cleanstart-packages.list.sh by silverwav - OpenPGP key:03187548 15 Apr 2009
@@ -31,7 +34,7 @@
 ################################################################################
 clear
 echo "--------------------------------------------------------------------------------"
-echo "                 (cleanstart) Script for installing packages (client)                 "
+echo "   (cleanstart) Script for installing packages (client) to Install Grphics Tools                "
 echo "--------------------------------------------------------------------------------"
  
 # ensure script is run as root/sudo
@@ -45,7 +48,7 @@ fi
  
 # check the argument count
 if [ $# -gt "1" ]
-then
+then`
  echo ""
  echo "Only one file with package names allowed."
  echo "--------------------------------------------------------------------------------"
@@ -67,7 +70,7 @@ if [ $# -eq "1" ]
 then
  CONFIG_FILE=$1
 else
- CONFIG_FILE=packages.list
+ CONFIG_FILE=grphictools.list
 fi
  
 PACKAGE_NAME_LIST=$(cat $CONFIG_FILE | grep -v -E "(^#)|(^ppa:)|(^deb http)|(^-)|(^key:)|(^http:.*\.gpg)" | awk -F'#' '{ print $1}')
@@ -106,20 +109,20 @@ echo ""
 echo "Updating... "
 echo "--------------------------------------------------------------------------------"
  
-aptitude update
+apt-get update
  
 echo ""
 echo "Installing packages:" ${PACKAGE_NAME_LIST}
 echo "--------------------------------------------------------------------------------"
-# ajouter le -y
-aptitude install ${PACKAGE_NAME_LIST}
+# Add le -y
+apt-get install ${PACKAGE_NAME_LIST}
  
 echo ""
 echo "Uninstalling packages:" ${REMOVE_PACKAGE_LIST}
 echo "--------------------------------------------------------------------------------"
  
-aptitude remove ${REMOVE_PACKAGE_LIST}
+apt-get remove ${REMOVE_PACKAGE_LIST}
  
 echo ""
-echo "Done"
+echo "DONE: Enjoy your Libre Grphics Suite"
 echo "--------------------------------------------------------------------------------"

@@ -1,0 +1,22 @@
+title_tag_text: ubuntu graphics suite
+h1_tag_text: mooniak
+safe: false
+lsi: false
+pygments: true
+ 
+baseurl:               /ubuntu-graphics-suite
+
+
+# About/contact
+author:
+  name:              Pathum Egodawatta
+  url:               https://twitter.com/pathumego
+  email:             pathum@mooniak.com
+
+# Custom vars
+version:             0.0.1
+
+paginate: 10
+
+exclude:
+  - README.md
